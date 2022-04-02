@@ -3,10 +3,11 @@
   "version": "1.0.1",
   "description": "",
   "dependencies": {
-    "ntypescript": "1.201706190042.1"
+    "tsc": "^2.0.4"
   },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "@nomiclabs/hardhat-vyper": "^3.0.0",
@@ -33,7 +34,7 @@
   },
   "scripts": {
     "build_": "npx hardhat compile",
-    "_build": "npx hardhat compile && sh scripts/build-contracts.sh",
+    "_build": "sh scripts/build-contracts.sh",
     "_load-contracts": "sh scripts/load-lkl-contracts.sh",
     "build": "npm run _load-contracts && npm run _build",
     "prepublish": "npm run build"

@@ -369,6 +369,10 @@ declare module "hardhat/types/runtime" {
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IAaveIncentivesController__factory>;
     getContractFactory(
+      name: "ICCPool",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.ICCPool__factory>;
+    getContractFactory(
       name: "IERC20",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IERC20__factory>;
@@ -412,6 +416,10 @@ declare module "hardhat/types/runtime" {
       name: "IYearnVault",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IYearnVault__factory>;
+    getContractFactory(
+      name: "LklLens",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.LklLens__factory>;
     getContractFactory(
       name: "Authorizable",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -1031,6 +1039,11 @@ declare module "hardhat/types/runtime" {
       signer?: ethers.Signer
     ): Promise<Contracts.IAaveIncentivesController>;
     getContractAt(
+      name: "ICCPool",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.ICCPool>;
+    getContractAt(
       name: "IERC20",
       address: string,
       signer?: ethers.Signer
@@ -1085,6 +1098,11 @@ declare module "hardhat/types/runtime" {
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.IYearnVault>;
+    getContractAt(
+      name: "LklLens",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.LklLens>;
     getContractAt(
       name: "Authorizable",
       address: string,

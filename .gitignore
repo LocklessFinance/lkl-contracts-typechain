@@ -2,6 +2,7 @@
 node_modules
 cache
 artifacts
+package-lock.json
 
 # don't check in the compiled typescript factories
 compiled
