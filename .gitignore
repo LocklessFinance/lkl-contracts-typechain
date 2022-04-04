@@ -12,5 +12,5 @@ types
 
 # we bundle in the dist/ so it's easy to use this repo as a npm package
 #!dist/types/
-# dist
+dist
 lkl-protocol
