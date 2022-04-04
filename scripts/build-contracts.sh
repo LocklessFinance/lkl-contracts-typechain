@@ -1,8 +1,9 @@
-rm -rf dist compiled
+rm -rf artifacts types dist compiled
 
 #Hardhat typechain will not make factory definitions, so we'll
 # compile the factory instances manually with tsc to create the defintions in
 # the next step.
+npx hardhat compile
 # Compile the factory definition files, including any local factories. Also
 # create the main index.d.ts definition file.
 tsc --project tsconfig.json

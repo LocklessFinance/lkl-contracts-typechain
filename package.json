@@ -1,6 +1,6 @@
 {
-  "name": "@lockless/core-typechain",
-  "version": "1.0.1",
+  "name": "@locklessfi/core-typechain",
+  "version": "1.0.2",
   "description": "",
   "dependencies": {
     "tsc": "^2.0.4"
@@ -36,7 +36,7 @@
     "build_": "npx hardhat compile",
     "_build": "sh scripts/build-contracts.sh",
     "_load-contracts": "sh scripts/load-lkl-contracts.sh",
-    "build": "npm run _load-contracts && npm run _build",
+    "build": "npm run _build",
     "prepublish": "npm run build"
   }
 }
